@@ -13,6 +13,7 @@ import java.util.Scanner;
 import model.entities.Contract;
 import model.entities.Installment;
 import model.services.ContractService;
+import model.services.PaypalService;
 
 public class ProgramContract {
 
@@ -38,11 +39,11 @@ public class ProgramContract {
 		System.out.print("Entre com o número de parcelas: ");
 		int n = sc.nextInt();
 		
-		ContractService service = new ContractService(null);
+		ContractService service = new ContractService(new PaypalService());
 		
 		service.processContract(contract, n);
 		
-		System.out.println("PARCELAS");
+		System.out.println("PARCELAS:");
 		
 		for (Installment installment: contract.getListInstaliment()) {
 			System.out.println(installment);

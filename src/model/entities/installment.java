@@ -16,8 +16,8 @@ public class Installment {
 		
 	}
 	
-	public Installment(LocalDate dueDate2, Double amount) {
-		this.date = dueDate2;
+	public Installment(LocalDate dueDate, Double amount) {
+		this.date = dueDate;
 		this.amount = amount;
 	}
 
