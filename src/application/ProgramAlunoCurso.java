@@ -27,7 +27,7 @@ public class ProgramAlunoCurso {
 		
 		for(int i = 0; i < n; i++) {
 			int number = sc.nextInt();
-			a.add(number);
+			b.add(number);
 		}
 		
 		System.out.print("How many students for course C? ");
@@ -35,7 +35,7 @@ public class ProgramAlunoCurso {
 		
 		for(int i = 0; i < n; i++) {
 			int number = sc.nextInt();
-			a.add(number);
+			c.add(number);
 		}
 		
 		Set<Integer> total = new HashSet<>(a);
