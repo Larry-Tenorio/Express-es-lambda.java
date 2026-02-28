@@ -5,7 +5,7 @@ public class Avg {
 	private String name;
 	private Double price;
 	
-	public Avg() {
+	public Avg(String name, Double price) {
 		this.name = name;
 		this.price = price;
 	}
